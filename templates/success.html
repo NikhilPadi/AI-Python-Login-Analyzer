@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Authentication Successful</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #0f172a;
+            color: white;
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .box {
+            background: #1e293b;
+            padding: 40px;
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        .check {
+            font-size: 60px;
+        }
+
+        a {
+            color: #60a5fa;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="box">
+
+    <div class="check">✓</div>
+
+    <h1>Authentication Successful</h1>
+
+    <p>
+        Welcome, {{ username }}.
+    </p>
+
+    <a href="/logout">
+        Sign Out
+    </a>
+
+</div>
+
+</body>
+</html>

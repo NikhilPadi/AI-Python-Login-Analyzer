@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.pytest_cache/
+
+# Credentials and private data
+.env
+.env.*
+!.env.example
+data/
+*.pem
+*.key
+
+# Authentication logs and generated reports
+sample_logs/
+reports/
+*.log
+*.db
+*.sqlite3
+
+# Backups and temporary files
+backups/
+*_backup.py
+analyzer_trello.py
+*.bak
+*.tmp
+
+# Google Authenticator QR code
+static/totp_qr.png
+static/*qr*.png
+
+# Editor files
+.vscode/
+.idea/
+.DS_Store

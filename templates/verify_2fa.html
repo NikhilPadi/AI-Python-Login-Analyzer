@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Two-Factor Authentication</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #0f172a;
+            color: white;
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .box {
+            width: 350px;
+            background: #1e293b;
+            padding: 40px;
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        input {
+            box-sizing: border-box;
+            width: 100%;
+            padding: 15px;
+            font-size: 24px;
+            text-align: center;
+            letter-spacing: 7px;
+            background: #0f172a;
+            border: 1px solid #475569;
+            border-radius: 6px;
+            color: white;
+        }
+
+        button {
+            width: 100%;
+            padding: 13px;
+            margin-top: 15px;
+            background: #2563eb;
+            color: white;
+            border: 0;
+            border-radius: 6px;
+        }
+
+        .error {
+            background: #7f1d1d;
+            padding: 10px;
+            margin-top: 15px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="box">
+
+    <h1>Two-Factor Authentication</h1>
+
+    <p>
+        Enter the 6-digit code from Google Authenticator.
+    </p>
+
+    <form method="POST">
+
+        <input
+            name="code"
+            maxlength="6"
+            inputmode="numeric"
+            autocomplete="one-time-code"
+            required
+        >
+
+        <button type="submit">
+            Verify
+        </button>
+
+    </form>
+
+    {% if error %}
+        <div class="error">
+            {{ error }}
+        </div>
+    {% endif %}
+
+</div>
+
+</body>
+</html>

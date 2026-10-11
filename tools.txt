@@ -1,0 +1,20 @@
+# Last 20 Logs
+tail -n 20 sample_logs/auth.log
+
+# Live Logs
+tail -f sample_logs/auth.log
+
+# Password Failures
+grep "PASSWORD_FAILURE" sample_logs/auth.log
+
+# Password Success
+grep "PASSWORD_SUCCESS" sample_logs/auth.log
+
+# MFA Failures
+grep "MFA_FAILURE" sample_logs/auth.log
+
+# MFA Success
+grep "MFA_SUCCESS" sample_logs/auth.log
+
+# All Auth Logs
+cat sample_logs/auth.log
