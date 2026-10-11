@@ -47,6 +47,17 @@ Start live monitoring in another terminal:
 Local AI analysis requires Ollama with Qwen3 8B.
 Trello integration requires separate API authorization.
 
+## Screenshots
+
+### Security Threat Detection
+![Security Detection](screenshots/security_detection.png)
+
+### AI Security Analysis
+![AI Analysis](screenshots/ai_analysis.png)
+
+### Automated Trello Incident Escalation
+![Trello Escalation](screenshots/trello_escalation.png)
+
 ## Project Purpose
 
 Built as a hands-on cybersecurity project to gain experience with authentication security, threat detection, log analysis, AI-assisted incident response, and security automation.
